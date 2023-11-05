@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <form action="" autocomplete="on">
+        <div class="username">
+            <label for="f_username">First name:</label>
+            <input placeholder="First name" type="text" name="username" id="f_username" required>
+        </div>
+        
+        <div class="lastname">
+            <label for="f_lastname">Surname:</label>
+            <input placeholder="Last name" type="text" name="lastname" id="f_lastname">
+        </div>
+
+        <div class="mail">
+            <label for="f_mail">Email:</label>
+            <input type="email" placeholder="Email" name="mail" id="f_mail" required>
+        </div>
+
+        <div class="gender">
+            <input type="radio" name="gender" id="m">
+            <label for="m">Male</label>
+            <input type="radio" name="gender" id="f">
+            <label for="f">Female</label>
+        </div>
+
+        <div class="city">
+            <label for="f_city">City:</label>
+            <select name="city" id="f_city">
+                <option value="" disabled selected>Select city</option>
+                <option value="1">Zaporizhia</option>
+                <option value="2">Dnipro</option>
+                <option value="3">Kiev</option>
+                <option value="4">Lviv</option>
+            </select>
+        </div>
+
+        <div class="bio">
+            <label for="f_bio">BIO:</label>
+            <textarea name="bio" id="f_bio" cols="50" rows="1"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit">SUBMIT</button>
+            <button type="reset">RESET</button>
+        </div>
+    </form>
+
 </body>
 </html>
