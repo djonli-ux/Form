@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <form action="" autocomplete="on">
-        <div class="username">
+    <div class="title">
+        <h1>Express Test</h1>
+    </div>
+
+    <form autocomplete="on">
+        <div>
             <label for="f_username">First name:</label>
-            <input placeholder="First name" type="text" name="username" id="f_username" required>
+            <input placeholder="First name" type="text" name="firstname" id="f_username" required>
         </div>
         
-        <div class="lastname">
+        <div>
             <label for="f_lastname">Surname:</label>
             <input placeholder="Last name" type="text" name="lastname" id="f_lastname">
         </div>
@@ -25,14 +28,46 @@
             <input type="email" placeholder="Email" name="mail" id="f_mail" required>
         </div>
 
-        <div class="gender">
-            <input type="radio" name="gender" id="m">
-            <label for="m">Male</label>
-            <input type="radio" name="gender" id="f">
-            <label for="f">Female</label>
+        <div>
+            <label for="number">Phone number:</label>
+            <input type="tel" placeholder="Phone number" 
+            name="phonenumber" id="f_number" value="+380" required>
         </div>
 
-        <div class="city">
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="f_date">
+        </div>
+
+        <div class="gender">
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="m">
+            <span>
+                <label for="m">Male</label>
+            </span>
+            <input type="radio" name="gender" id="f">
+            <span>
+                <label for="f">Female</label>
+            </span>
+        </div>
+
+        <div class="skills">
+            <label for="skills">Skills:</label>
+            <span>
+                <label>C++</label>
+            </span>
+            <input type="checkbox" value="C++" name="skills">
+            <span>
+                <label>C#</label>
+            </span>
+            <input type="checkbox" value="C#" name="skills">
+            <span>
+                <label>Java</label>
+            </span>
+            <input type="checkbox" value="Java" name="skills">
+        </div>
+
+        <div>
             <label for="f_city">City:</label>
             <select name="city" id="f_city">
                 <option value="" disabled selected>Select city</option>
@@ -43,14 +78,14 @@
             </select>
         </div>
 
-        <div class="bio">
+        <div>
             <label for="f_bio">BIO:</label>
-            <textarea name="bio" id="f_bio" cols="50" rows="1"></textarea>
+            <textarea name="bio" id="f_bio" cols="25" rows="1"></textarea>
         </div>
 
-        <div class="button">
-            <button type="submit">SUBMIT</button>
-            <button type="reset">RESET</button>
+        <div>
+            <button class="button submit" type="submit">SUBMIT</button>
+            <button class="button reset" type="reset">RESET</button>
         </div>
     </form>
 
