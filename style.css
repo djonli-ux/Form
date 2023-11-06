@@ -18,6 +18,11 @@ div > label {
     margin-right: 5px; 
 }
 
+.label-required::before {
+    content: "*";
+    color: red;
+}
+
 #f_bio {
     position: relative;
     top: 5px;
